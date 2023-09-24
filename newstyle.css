@@ -1,0 +1,80 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(47, 155, 194);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 3px 0;
+        }
+        nav {
+            text-align: center; 
+            text-decoration: none;
+        }
+        nav ul {
+            display: block;
+            list-style: none;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav li:hover{
+       font-family: monospace;
+            font-weight: bold;
+        }
+        /* CSS for smaller screens */
+        @media screen and (max-width: 768px) {
+            nav li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        .line {
+            font-size: 19px;
+            color: rgb(182, 199, 213);
+            position: absolute;
+            text-align: center;
+            top: 530px;
+            left: 0px;
+            animation: moveLine 19s infinite linear;
+        }
+        @keyframes moveLine {
+            0% {
+                left: 0;
+                background-color: rgb(47, 155, 194);
+            }
+            100% {
+                left: 450px;
+            }
+        }
+        #efthrace{
+            position: absolute;
+            top: 590px;
+            left:1190px;
+            width:150px;
+            height: 50px;
+        }
+        .actualconcerts{
+            position: absolute;
+            top:170px;
+            left:290px;
+            display: flex;
+            text-align: center;
+           
+        }
+        .actualconcerts img{
+            margin: 9px;
+        
+        }
